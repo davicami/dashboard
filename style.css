@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+:root {
+    --blue-500: #3B82F6;
+    --yellow-400: #FACC15;
+    --grey-300: #D1D5DB;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* font-family: 'Water Brush', cursive; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 5px;
+}
+
+.container div {
+    padding: 4px;
+}
+
+.header {
+    background-color: ;
+    grid-column: 2 / 3;
+}
+
+.sidebar {
+    color: white;
+    background-color: var(--blue-500);
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+}
+
+.content {
+    color: black;
+    background-color: var(--grey-300);
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.sidebar ul {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.sidebar ul,
+.sidebar li {
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+.projects{
+    grid-column: 1/2;
+}
+
+.right-content{
+    grid-column: 2/3;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card{
+    background-color: white;
+    color: black;
+    height: 200px;
+}
