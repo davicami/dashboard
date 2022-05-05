@@ -4,7 +4,7 @@
 :root {
     --blue-500: #3B82F6;
     --yellow-400: #FACC15;
-    --grey-300: #D1D5DB;
+    --grey-300: #dde2eb;
 }
 
 *,
@@ -38,7 +38,7 @@ html {
     background-color: var(--blue-500);
     grid-row: 1 / 4;
     grid-column: 1 / 2;
-    padding: 20px;
+    padding: 15px;
 }
 
 .content {
@@ -56,6 +56,7 @@ html {
 .sidebar ul {
     display: grid;
     grid-template-rows: 1fr;
+    padding-top: 20px;
 }
 
 .sidebar ul,
@@ -63,6 +64,33 @@ html {
     font-size: 1rem;
     list-style-type: none;
 }
+
+.sidebar li {
+    padding-top: 10px;
+}
+
+.sidebar img{
+    width: 30px;
+    padding-right: 10px;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+}
+
+.logo-img{
+    width:40px;
+    padding-right: 10px;
+}
+
+.sidebar li{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+}
+
 
 .main-content {
     grid-column: 1/2;
