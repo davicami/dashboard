@@ -52,7 +52,6 @@ html {
     background-color: var(--grey-300);
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    font-size: 0.8rem;
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 15px;
@@ -99,6 +98,7 @@ html {
 
 .main-content {
     grid-column: 1/2;
+    font-size: 0.9rem;
 }
 
 .section-title {
@@ -107,11 +107,12 @@ html {
 
 .right-content {
     grid-column: 2/3;
+    font-size: 0.7rem;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
 }
@@ -124,6 +125,22 @@ html {
     padding: 30px;
     border-left: 11px solid var(--yellow-400);
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 15px;
+}
+
+.action-block{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    align-content: end;
+}
+
+.action-block img{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 30px;
 }
 
 .title {
