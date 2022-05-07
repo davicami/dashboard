@@ -274,3 +274,13 @@ html {
     border-radius: 25px;
     /*cursor: pointer*/
 }
+
+.user-parag-small{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.user-parag-big{
+    font-weight: bold;
+    font-size: 1.4em;
+}
